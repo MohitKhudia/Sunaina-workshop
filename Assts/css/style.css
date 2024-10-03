@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+One&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none !important;
+    box-sizing: border-box !important;
+    text-decoration: none !important;
+    margin-bottom: 0 !important;
+}
+.ff-SnistaOne{
+    font-family: 'Sansita One', sans-serif;
+}
+@font-face {
+    font-family: SeoulNamsanCBL;
+    src: url('https://yourdomain.com/fonts/seoulnamsan-cbl.woff2') format('woff2'),
+         url('https://yourdomain.com/fonts/seoulnamsan-cbl.woff') format('woff'),
+         url('https://yourdomain.com/fonts/seoulnamsan-cbl.ttf') format('truetype');
+}
+
+.ff-SeoulNamsanCBL {
+    font-family: 'SeoulNamsanCBL', sans-serif;
+}
+
+.container{
+    max-width: 1340px !important;
+}
+body{
+    background-image: url(../img/png/bg.png);
+    background-repeat: no-repeat;
+    background-position: top to bottom;
+    background-size: cover;
+
+}
+
+/* ------------- navbaar ------------- */
+
+.LOGO{
+    font-size: 28px;
+    font-weight: 400;
+line-height: 32.62px;
+color: #000000;
+}
+ul li a{
+    color:#F478FF;
+    font-size: 18px;
+    font-weight: 400;
+   line-height: 18px; 
+}
+ul li a:hover{
+    color: #6F6F70;
+}
+
+
+#navitem{
+ position: fixed;
+ height: calc( 100% - 100px);
+ width: 100%;
+ right:100%;
+top: -100%; 
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+
+ transition: 700ms;
+
+}
+.top-100{
+    top: 100px !important;
+}
+
+
+/* ---------- Custom Button ----------- */
+
+ .btn-ContactMe{
+ background-color:#F478FF;
+ padding: 10px 20px;
+ color: #FFFFFF;
+ font-size: 18px;
+ font-weight: 400;
+ border-radius: 10px;
+}
+
+.btn-ContactMe:hover{
+    background-color:#6F6F70;
+}
+
+/* ------------ Hamburger ------------- */
+
+.hamburger{
+    height: 30px;
+    width: 30px;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.hamburger span{
+    width: 100%;
+   height: 2px;
+    background-color:white ;
+    border-radius: 8px;
+    z-index: 2;
+    position: relative;
+}
+
+/* ----------- root ----------- */
+ :root{
+   --fs-vxsm:14px;
+    --fs-xxsm:18px;
+    --fs-xsm:20px;
+    --fs-sm1:24px;
+    --fs-sm:29px;
+    --fs-sm2:36px;
+    --fs-md:48px;
+    --fs-xl:72px;
+    --fs-xl1:80px;
+    --fs-xxlg:157px;
+ }
+
+.w-400{
+    font-weight: 400;
+ }
+ .fw-500{
+    font-weight: 500;
+ }
+ .fw-600{
+    font-weight: 600;
+ }
+ .fw-700{
+    font-weight: 700;
+ }
+ .fw-800{
+    font-weight: 800;
+ }
+ .fw-900{
+    font-weight: 900;
+ }
+
+ /* -------height and width ------------- */
+.w-11{
+    width: 11%;
+}
+ .w-60{
+    width: 60%;
+ }
+ .w-88{
+    width: 88%;
+ }
+
+/* ------------ border-property --------------- */
+.border-radius{
+    border-radius:10px 50px 50px 10px;
+}
+.border-radius-right{
+     border-radius:50px 10px 10px 50px;
+}
+.border-color{
+    border-right: 2px solid transparent ;
+     background-clip: padding-box, border-box;
+    background:linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #F478FF 100%)1;
+}
+
+  
+ 
+ 
+  
+
+
+ 
+/* --------- other Custom Css ---------- */
+.bg-color-paper{
+    background-image:linear-gradient(90deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%);
+}
+.gap-10{
+    gap: 10px;
+
+}
+.py-20{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.px-30{
+    padding-left: 30px;
+    padding-right: 30px;
+}
