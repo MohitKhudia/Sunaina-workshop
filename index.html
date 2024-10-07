@@ -1,151 +1,243 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wordshop</title>
+    <!------------------ Custom Css Link ------------------>
+    <link rel="stylesheet" href="./Assts/css/style.css" />
+    <script src="./Assts/js/style.js"></script>
+    <!------------ slick.min.css------------>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!----------- theme.min.css---------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-----------bootstrap --------->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script src="./Assts/js/style.js"></script>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Wordshop</title>
-  <!------------------ Custom Css Link ------------------>
-  <link rel="stylesheet" href="./Assts/css/style.css">
-  <!------------ slick.min.css------------>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
-    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!----------- theme.min.css---------->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
-    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-----------bootstrap --------->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <style>
-    .box {
-      height: 100px;
-      background-color: red;
-      border: 2px solid white;
-    }
-
-    .collapsed {
-      background-color: red;
-    }
-  </style>
-</head>
-
-<body>
-  <header>
-    <nav class="mt-4">
+  <body class="body">
+    <header>
+      <nav class="mt-4">
         <div class="container">
-            <div class="d-flex align-items-center justify-content-between">
-                <div class="w-88 border-radius-right d-flex align-items-center bg-color-paper py-20 px-30 justify-content-between">
-                     <div><p class="LOGO ff-SnistaOne">Portfolio</p></div>
-                     <div>
-                        <ul class="d-flex align-items-center gap-5">
-                            <li><a href="" class="ff-SeoulNamsanCBL">Home</a></li>
-                            <li><a href="" class="ff-SeoulNamsanCBL">Workshop</a></li>
-                            <li><a href="" class="ff-SeoulNamsanCBL">Resume</a></li>
-                        </ul>
-                     </div>
-                     <div> <a href="" class="btn-ContactMe ff-SeoulNamsanCBL">Contact Me</a></div>
-                </div>
-                <div class="w-11 bg-color-paper d-flex align-items-center gap-10  justify-content-center py-20 px-30 border-radius border-color">
-                    <a href=""><img src="./Assts/img/svg/mage_linkedin.svg" alt="Linkedin"></a>
-                    <a href=""><img src="./Assts/img/svg/raphael_github.svg" alt="Gitbub"></a>
-                </div>
+          <div class="d-flex align-items-center justify-content-between">
+            <div
+              class="w-lg-88 w-full border-radius-right d-flex align-items-center bg-color-paper py-20 px-30 justify-content-between"
+            >
+              <div><p class="LOGO ff-SnistaOne">Portfolio</p></div>
+              <div >
+                <div class="d-flex d-lg-none"><a href=""><img src="./Assts/img/svg/mage_linkedin.svg" alt="Linkedin"/></a>
+              <a href=""><img src="./Assts/img/svg/raphael_github.svg" alt="Gitbub"/></a></div>
+                <ul class="d-flex align-items-center gap-5" id="navitem">
+                  <li><a href="" class="ff-SeoulNamsanCBL">Home</a></li>
+                  <li><a href="" class="ff-SeoulNamsanCBL">Workshop</a></li>
+                  <li><a href="" class="ff-SeoulNamsanCBL">Resume</a></li>
+                  <a href="" class="btn-ContactMe d-block d-lg-none ff-SeoulNamsanCBL"
+                  >Contact Me</a
+                >
+                </ul>
+              </div>
+              <div>
+                <a href="" class="btn-ContactMe ff-SeoulNamsanCBL d-none d-lg-block"
+                  >Contact Me</a>
+                  <div class="hamburger d-flex d-lg-none" id="hamburger" onclick="opennav()"><span></span><span></span><span></span></div>
+              </div>
             </div>
+            <div
+              class="w-11 bg-color-paper d-flex align-items-center gap-10 justify-content-center py-20 px-30 border-radius border-color d-none d-lg-flex"
+            >
+              <a href=""
+                ><img src="./Assts/img/svg/mage_linkedin.svg" alt="Linkedin"
+              /></a>
+              <a href=""
+                ><img src="./Assts/img/svg/raphael_github.svg" alt="Gitbub"
+              /></a>
+            </div>
+          </div>
         </div>
-    </nav>
-    <section>
-        
-    </section>
-  </header>
- 
- 
+      </nav>
+      <section class="container mt-6">
+        <div class="d-flex justify-content-between">
+          <aside>
+            <div class="d-flex flex-column cursor-pointer">
+              <a href="" id="item1" class="aside-btns ff-BreeSerif">20</a>
+              <p class="text-center ff-BreeSerif aside-bottom-btns">
+                Java Script
+              </p>
+              <div class="dots1"></div>
+            </div>
+            <div class="d-flex flex-column cursor-pointer">
+              <a href="" class="aside-btns ff-BreeSerif">8</a>
+              <p class="text-center ff-BreeSerif aside-bottom-btns">HTML</p>
+              <div class="dots1"></div>
+            </div>
+            <div class="d-flex flex-column cursor-pointer">
+              <a href="" class="aside-btns ff-BreeSerif">8</a>
+              <p class="text-center ff-BreeSerif aside-bottom-btns">HTML</p>
+              <div class="dots1"></div>
+            </div>
+            <div class="d-flex flex-column cursor-pointer">
+              <a href="" class="aside-btns ff-BreeSerif">8</a>
+              <p class="text-center ff-BreeSerif aside-bottom-btns">HTML</p>
+              <div class="dots1"></div>
+            </div>
+            <div class="d-flex flex-column cursor-pointer">
+              <a href="" class="aside-btns ff-BreeSerif">8</a>
+              <p class="text-center ff-BreeSerif aside-bottom-btns">HTML</p>
+              <div class="dots1"></div>
+            </div>
+          </aside>
+          <div class="w-88 responsive-w">
+            <div class="responsive " id="responsive">
+              <div class="box">
+                <img src="./Assts/img/png/Mask group (5).png" alt="" />
+              </div>
+              <div class="box">
+                <img src="./Assts/img/png/Mask group (4).png" alt="" />
+              </div>
+              <div class="box-mid">
+                <a href="./DabbaWala.html"><img src="./Assts/img/png/Mask group (3).png" alt="" /></a>
+              </div>
+              <div class="box">
+                <img src="./Assts/img/png/Mask group (4).png" alt="" />
+              </div>
+              <div class="box">
+                <img src="./Assts/img/png/Mask group (5).png" alt="" />
+              </div>
+              <!-- repeat uper imges  for scroll  -->
+              <div class="box">
+                <img src="./Assts/img/png/Mask group (5).png" alt="" />
+              </div>
+              <div class="box">
+                <img src="./Assts/img/png/Mask group (4).png" alt="" />
+              </div>
+              <div class="box-mid">
+                <img src="./Assts/img/png/Mask group (3).png" alt="" />
+              </div>
+              <div class="box">
+                <img src="./Assts/img/png/Mask group (4).png" alt="" />
+              </div>
+              <div class="box">
+                <img src="./Assts/img/png/Mask group (5).png" alt="" />
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-10 mt-6">
+              <p class="fs-sm fw-400 ff-SnistaOne">Heading</p>
+              <p class="fs-xsm fw-400 ff-SnistaOne">2022 - 2024</p>
+            </div>
+            <p class="fs-xsmm ff-BreeSerif fw-400 ">Introduction</p>
+            <div class="position-relative w-60">
+              <p class="fs-xsmm ff-BreeSerif fw-400 w-88 text-gray mt-1">
+                Lorem ipsum dolor sit amet consectetur. At consequat amet
+                habitant proin et fringilla pulvinar. Viverra quam integer
+                habitasse sit et dui. Viverra vulputate nunc odio pellentesque
+                neque. Bibendum tortor consequat venenatis non. Suspendisse
+                iaculis
+              </p>
+              <img
+                src="./Assts/img/svg/back.svg"
+                alt="Arrow more"
+                class="arrow"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
 
+    <!-- ---------bootstrap -------  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- --------jquery.min.js-------  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
+    <!-- ---------- slick.min.js-------  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
+    <script>
+      $(".responsive").slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        prevArrow: ".pre",
+        nextArrow: ".next",
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 1000,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: false,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      });
+    </script>
+    <script>
+      var item1 = document.getElementById("item1");
+      var responsive = document.getElementById("responsive");
 
-
-
-
-
-
-
-
-
-
-
-  <!-- <div class="responsive">
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    
-  </div>
-  <span class="pre">pre</span>
-  <span class="next">next</span> -->
-
-
-
-
-
-
-
-  <!-- ---------bootstrap -------  -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <!-- --------jquery.min.js-------  -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-  <!-- ---------- slick.min.js-------  -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
-    integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-  <script>
-    $('.responsive').slick({
-      dots: true,
-      infinite: false,
-      speed: 300,
-      slidesToShow: 4,
-      prevArrow: ".pre",
-      nextArrow: ".next",
-      slidesToScroll: 4,
-      autoplay: true,
-      autoplaySpeed: 1000,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: true
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
+      item1.addEventListener("click", (e) => {
+        e.preventDefault();
+        item1.style.backgroundColor="#F478FF"
+        item1.style.color="white"
+        console.log("Item1 clicked");
+        responsive.style.display = "block";
+      });
+      const ham = document.getElementById("hamburger")
+        const navitem = document.getElementById("navitem")
+        let opennav = function () {
+            navitem.classList.toggle("start-0");
         }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-      ]
-    });
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>
